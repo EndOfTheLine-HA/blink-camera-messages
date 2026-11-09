@@ -86,6 +86,9 @@ want to play clips near the duration limit.
    17 seconds. If the message sounds quiet, set an optional volume boost
    from 0 to 18 dB. Boost requires FFmpeg on the Home Assistant host and uses
    a peak limiter.
+
+   ![Add message form showing button name, camera selection, message text and volume boost, with camera names and IDs blurred](docs/screenshots/add-message.png)
+
 3. Select **Submit**, then open the new button entity and select **Press**.
    Listen at the camera to confirm playback. Add the entity to a dashboard
    once it works. Use the same **Configure** menu to edit or remove messages.
