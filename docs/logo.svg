@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">Blink Camera Messages</title>
+  <defs>
+    <linearGradient id="blue" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#1768E8"/>
+      <stop offset="1" stop-color="#133F96"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="240" height="240" rx="56" fill="url(#blue)"/>
+  <path d="M75 82h47l12 12h23a15 15 0 0 1 15 15v50a15 15 0 0 1-15 15h-47l-27 22v-22H72a15 15 0 0 1-15-15v-62a15 15 0 0 1 15-15z" fill="#F6FAFF"/>
+  <circle cx="113" cy="129" r="24" fill="#174AAB"/>
+  <circle cx="113" cy="129" r="10" fill="#8BF2E0"/>
+  <path d="M187 116a20 20 0 0 1 0 26m13-37a36 36 0 0 1 0 48" fill="none" stroke="#8BF2E0" stroke-width="7" stroke-linecap="round"/>
+</svg>

@@ -1,5 +1,7 @@
 # Blink Camera Messages
 
+<img src="docs/logo.svg" alt="Blink Camera Messages logo" width="128">
+
 Create Home Assistant buttons that speak saved messages through compatible
 Blink camera speakers. Home Assistant renders your text with your chosen
 text-to-speech provider, then sends the audio over MQTT. BlinkBridge plays
