@@ -1,14 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
-  <title id="title">Blink Camera Messages</title>
-  <defs>
-    <linearGradient id="blue" x2="1" y2="1" gradientUnits="objectBoundingBox">
-      <stop stop-color="#1768E8"/>
-      <stop offset="1" stop-color="#133F96"/>
-    </linearGradient>
-  </defs>
-  <rect x="8" y="8" width="240" height="240" rx="56" fill="url(#blue)"/>
-  <path d="M75 82h47l12 12h23a15 15 0 0 1 15 15v50a15 15 0 0 1-15 15h-47l-27 22v-22H72a15 15 0 0 1-15-15v-62a15 15 0 0 1 15-15z" fill="#F6FAFF"/>
-  <circle cx="113" cy="129" r="24" fill="#174AAB"/>
-  <circle cx="113" cy="129" r="10" fill="#8BF2E0"/>
-  <path d="M187 116a20 20 0 0 1 0 26m13-37a36 36 0 0 1 0 48" fill="none" stroke="#8BF2E0" stroke-width="7" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <title>Blink Camera Messages</title>
+  <rect x="4" y="4" width="248" height="248" rx="56" fill="#1d2330"/>
+  <path d="M81 170h16v14h-16z" fill="#18594D"/>
+  <rect x="69" y="180" width="40" height="9" rx="4.5" fill="#18594D"/>
+  <rect x="40" y="72" width="98" height="102" rx="29" fill="#18594D" stroke="#a1e1d0" stroke-width="3"/>
+  <rect x="45" y="77" width="88" height="92" rx="24" fill="none" stroke="#F5FCF9" stroke-width="2"/>
+  <rect x="81" y="88" width="16" height="7" rx="3.5" fill="#F5FCF9"/>
+  <circle cx="89" cy="123" r="18" fill="none" stroke="#F5FCF9" stroke-width="3"/>
+  <g fill="none" stroke="#d0a5fa" stroke-width="8" stroke-linecap="round">
+    <path d="M154 110a27 27 0 0 1 0 36"/>
+    <path d="M172 95a49 49 0 0 1 0 66"/>
+    <path d="M190 80a72 72 0 0 1 0 96"/>
+  </g>
 </svg>
