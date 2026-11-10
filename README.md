@@ -19,7 +19,10 @@ the message text, camera and optional volume boost in Home Assistant.
   a working TTS entity. Google Translate TTS was used in the setup shown below.
 - **BlinkBridge with MQTT speaker support**, running separately and signed in
   to Blink. The Marketplace installs the Home Assistant integration. Set up
-  the bridge using the [speaker-enabled BlinkBridge instructions](https://github.com/EndOfTheLine-HA/blinkbridge/tree/2762c2f#optional-camera-speaker-playback).
+  the bridge using the [speaker-enabled BlinkBridge instructions](https://github.com/EndOfTheLine-HA/blinkbridge/tree/2762c2f0b3ed8d3160e6111940d01354b37418df#optional-camera-speaker-playback).
+  MQTT speaker support is currently available in this pinned development
+  snapshot, not the bridge's default branch or a tagged release. The link
+  identifies the tested commit and does not depend on the development branch name.
 - **A shared MQTT broker** reachable by Home Assistant and BlinkBridge.
   Restrict writes to the bridge's playback topic to trusted clients.
 - **A compatible Blink camera** with an active IMMI live view in BlinkBridge.
@@ -31,7 +34,16 @@ Camera Messages.
 
 ## 1. Enable speaker playback in BlinkBridge
 
-1. Set up the speaker-enabled BlinkBridge build linked above. In BlinkBridge's
+1. Check out the pinned speaker-enabled BlinkBridge snapshot and follow its
+   linked setup instructions:
+
+   ```sh
+   git clone https://github.com/EndOfTheLine-HA/blinkbridge.git
+   cd blinkbridge
+   git checkout 2762c2f0b3ed8d3160e6111940d01354b37418df
+   ```
+
+   In BlinkBridge's
    configuration, add the camera's exact Blink name to the existing
    `cameras.live` list.
 2. For Docker Compose, create `.env.speaker` next to BlinkBridge's
@@ -58,9 +70,11 @@ want to play clips near the duration limit.
 
 ## 2. Install and connect in Home Assistant
 
-1. Use the Marketplace badge above, or go to **Settings → Marketplace →
-   Add from link** and enter `EndOfTheLine-HA/blink-camera-messages`. Select
-   **Integration** if prompted. Install the integration and restart Home Assistant.
+1. Open **Settings → Marketplace**, search for **Blink Camera Messages**, and
+   open its listing. Install the integration and restart Home Assistant.
+   If the listing is not available in search yet, use the Marketplace badge
+   above or **Add from link** and enter `EndOfTheLine-HA/blink-camera-messages`.
+   Select **Integration** if prompted.
 2. Go to **Settings → Devices & services → Add integration** and search for
    **Blink Camera Messages**. In **Connect BlinkBridge**, enter the same topic
    prefix you set in BlinkBridge, usually `blinkbridge`. Select your
