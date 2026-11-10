@@ -31,6 +31,20 @@ the message text, camera and optional volume boost in Home Assistant.
 Frigate is optional. The built-in Blink integration can coexist with Blink
 Camera Messages.
 
+## Verified with BlinkBridge v0.1.0
+
+On November 10, 2026, the running bridge was updated to the tagged
+**BlinkBridge v0.1.0** release. A saved greeting button was pressed in Home
+Assistant and played through a Blink Mini over MQTT. Home Assistant returned
+success, BlinkBridge logged the audio sent, and the listener confirmed hearing
+the greeting.
+
+Frigate continued receiving video at **3.0–3.1 FPS** during the 30-second
+observation spanning playback, with no restart of its camera video process.
+Frigate and MediaMTX were not restarted for the bridge update or playback test.
+This verifies the tested Blink Mini setup; other camera models have not been
+verified. A Frigate face-recognition greeting was also tested before this release.
+
 ## 1. Enable speaker playback in BlinkBridge
 
 1. Check out the speaker-enabled BlinkBridge release and follow its
