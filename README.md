@@ -19,10 +19,9 @@ the message text, camera and optional volume boost in Home Assistant.
   a working TTS entity. Google Translate TTS was used in the setup shown below.
 - **BlinkBridge with MQTT speaker support**, running separately and signed in
   to Blink. The Marketplace installs the Home Assistant integration. Set up
-  the bridge using the [speaker-enabled BlinkBridge instructions](https://github.com/EndOfTheLine-HA/blinkbridge/tree/2762c2f0b3ed8d3160e6111940d01354b37418df#optional-camera-speaker-playback).
-  MQTT speaker support is currently available in this pinned development
-  snapshot, not the bridge's default branch or a tagged release. The link
-  identifies the tested commit and does not depend on the development branch name.
+  the bridge using [BlinkBridge v0.1.0](https://github.com/EndOfTheLine-HA/blinkbridge/releases/tag/v0.1.0),
+  which includes MQTT speaker support. Follow the
+  [speaker setup instructions for that release](https://github.com/EndOfTheLine-HA/blinkbridge/tree/v0.1.0#optional-camera-speaker-playback).
 - **A shared MQTT broker** reachable by Home Assistant and BlinkBridge.
   Restrict writes to the bridge's playback topic to trusted clients.
 - **A compatible Blink camera** with an active IMMI live view in BlinkBridge.
@@ -34,13 +33,12 @@ Camera Messages.
 
 ## 1. Enable speaker playback in BlinkBridge
 
-1. Check out the pinned speaker-enabled BlinkBridge snapshot and follow its
+1. Check out the speaker-enabled BlinkBridge release and follow its
    linked setup instructions:
 
    ```sh
-   git clone https://github.com/EndOfTheLine-HA/blinkbridge.git
+   git clone --branch v0.1.0 https://github.com/EndOfTheLine-HA/blinkbridge.git
    cd blinkbridge
-   git checkout 2762c2f0b3ed8d3160e6111940d01354b37418df
    ```
 
    In BlinkBridge's
